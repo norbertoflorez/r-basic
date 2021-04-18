@@ -15,8 +15,8 @@ while (segundos_restantes > 0) {
   año=año+1;
   }
 dias_restantes=(((segundos_restantes*-1)/60)/60)%/%24;
-Horas_restantes_dia=((((segundos_restantes*-1)/60)/60)%%24)*24;
-print(dias_restantes)
-print(Horas_restantes_dia)
+Horas_restantes_dia=(((segundos_restantes*-1)/60)/60)%%24;
+print(31-1-dias_restantes)
+print(24-Horas_restantes_dia)
+print(paste("Dicembre",(31-1-dias_restantes),",","Hora",(trunc(24-Horas_restantes_dia)),"PM,","Año",año-1))
 }
-
