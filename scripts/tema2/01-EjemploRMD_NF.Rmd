@@ -1,0 +1,14 @@
+---
+title: "01-EjemploRMD_NF"
+author: "Norberto Florez"
+date: "22/4/2021"
+output: pdf_document
+---
+
+```{r prb1}
+library(reticulate)
+use_python("/Users/ASUS/anaconda3/python.exe")
+os <- import("os")
+os$listdir(".")
+```
+
