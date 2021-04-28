@@ -1,0 +1,310 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Tarea4},
+  pdfauthor={Norberto Florez},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Tarea4}
+\author{Norberto Florez}
+\date{28/4/2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{punto-1---realizad-los-siguientes-productos-de-matrices-siguiente-en-r}{%
+\paragraph{Punto 1 - Realizad los siguientes productos de matrices
+siguiente en
+R:}\label{punto-1---realizad-los-siguientes-productos-de-matrices-siguiente-en-r}}
+
+\[ A = \begin{equation*}\begin{pmatrix} 1 & 2 & 3 & 4\\ 4 & 3 & 2 & 1\\ 0 & 1 & 0 & 2 
+\\ 3 & 0 & 4 & 0\end{pmatrix}\end{equation*}\]
+
+\[ B = \begin{equation*}\begin{pmatrix} 4 & 3 & 2 & 1\\ 0 & 3 & 0 & 4
+\\ 1 & 2 & 3 & 4\\ 0 & 1 & 0 & 2\end{pmatrix}\end{equation*}\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{A }\OtherTok{=} \FunctionTok{rbind}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\DecValTok{4}\NormalTok{,}\DecValTok{4}\SpecialCharTok{:}\DecValTok{1}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{2}\NormalTok{), }\FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{0}\NormalTok{))}
+\NormalTok{A}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4]
+## [1,]    1    2    3    4
+## [2,]    4    3    2    1
+## [3,]    0    1    0    2
+## [4,]    3    0    4    0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{B }\OtherTok{=} \FunctionTok{rbind}\NormalTok{(}\DecValTok{4}\SpecialCharTok{:}\DecValTok{1}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{4}\NormalTok{),}\DecValTok{1}\SpecialCharTok{:}\DecValTok{4}\NormalTok{, }\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\NormalTok{B}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4]
+## [1,]    4    3    2    1
+## [2,]    0    3    0    4
+## [3,]    1    2    3    4
+## [4,]    0    1    0    2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{t }\OtherTok{=} \DecValTok{4}
+\end{Highlighting}
+\end{Shaded}
+
+\[A \cdot B\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{A}\SpecialCharTok{\%*\%}\NormalTok{B}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4]
+## [1,]    7   19   11   29
+## [2,]   18   26   14   26
+## [3,]    0    5    0    8
+## [4,]   16   17   18   19
+\end{verbatim}
+
+\[B \cdot A\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{B}\SpecialCharTok{\%*\%}\NormalTok{A}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4]
+## [1,]   19   19   22   23
+## [2,]   24    9   22    3
+## [3,]   21   11   23   12
+## [4,]   10    3   10    1
+\end{verbatim}
+
+\[(A \cdot B)^{t}\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{(A}\SpecialCharTok{\%*\%}\NormalTok{B)}\SpecialCharTok{\^{}}\NormalTok{t}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        [,1]   [,2]   [,3]   [,4]
+## [1,]   2401 130321  14641 707281
+## [2,] 104976 456976  38416 456976
+## [3,]      0    625      0   4096
+## [4,]  65536  83521 104976 130321
+\end{verbatim}
+
+\[B^{t} \cdot A\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{(B}\SpecialCharTok{\^{}}\NormalTok{t)}\SpecialCharTok{\%*\%}\NormalTok{A}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4]
+## [1,]  583  771  934 1137
+## [2,] 1092  243 1186   81
+## [3,]  833  131 1059  182
+## [4,]   52    3   66    1
+\end{verbatim}
+
+\[(A \cdot B)^{-1}\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{(A}\SpecialCharTok{\%*\%}\NormalTok{B)}\SpecialCharTok{\^{}}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##            [,1]       [,2]       [,3]       [,4]
+## [1,] 0.14285714 0.05263158 0.09090909 0.03448276
+## [2,] 0.05555556 0.03846154 0.07142857 0.03846154
+## [3,]        Inf 0.20000000        Inf 0.12500000
+## [4,] 0.06250000 0.05882353 0.05555556 0.05263158
+\end{verbatim}
+
+\[A^{-1} \cdot B^{t}\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{(A}\SpecialCharTok{\^{}}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{1}\NormalTok{))}\SpecialCharTok{\%*\%}\NormalTok{(B}\SpecialCharTok{\^{}}\NormalTok{t)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          [,1]     [,2] [,3]     [,4]
+## [1,] 256.3333 127.0833 43.0 218.3333
+## [2,]  64.5000  56.2500 44.5 229.5833
+## [3,]      Inf      Inf  Inf      Inf
+## [4,]      NaN      Inf  NaN      Inf
+\end{verbatim}
+
+\hypertarget{punto-2---considerad-en-un-vector-los-nuxfameros-de-vuestro-dni-y-llamadlo-dni.}{%
+\paragraph{Punto 2 - Considerad en un vector los números de vuestro DNI
+y llamadlo
+dni.}\label{punto-2---considerad-en-un-vector-los-nuxfameros-de-vuestro-dni-y-llamadlo-dni.}}
+
+\[dni = (9, 4, 1, 5, 1, 0, 0, 9)\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{dni }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\DecValTok{9}\NormalTok{, }\DecValTok{4}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{5}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{9}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+El valor de \(dni^{2}\) es ~~~(81, 16, 1, 25, 1, 0, 0, 81)
+
+El valor de \(\sqrt{dni}\) es ~~~(3, 2, 1, 2.236068, 1, 0, 0, 3)
+
+La suma Acumulada del vector DNI es ~~~ 29
+
+\hypertarget{punto-3---considerad-el-vector-de-las-letras-de-vuestro-nombre-y-apellido.-llamadlo-name.}{%
+\paragraph{Punto 3 - Considerad el vector de las letras de vuestro
+nombre y apellido. Llamadlo
+name.}\label{punto-3---considerad-el-vector-de-las-letras-de-vuestro-nombre-y-apellido.-llamadlo-name.}}
+
+\[name = (N,O,R,B,E,R,T,O,F,L,O,R,E,Z)\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{name }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\StringTok{"N"}\NormalTok{,}\StringTok{"O"}\NormalTok{,}\StringTok{"R"}\NormalTok{,}\StringTok{"B"}\NormalTok{,}\StringTok{"E"}\NormalTok{,}\StringTok{"R"}\NormalTok{,}\StringTok{"T"}\NormalTok{,}\StringTok{"O"}\NormalTok{,}\StringTok{"F"}\NormalTok{,}\StringTok{"L"}\NormalTok{,}\StringTok{"O"}\NormalTok{,}\StringTok{"R"}\NormalTok{,}\StringTok{"E"}\NormalTok{,}\StringTok{"Z"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+El vector del nombre es ~ (N, O, R, B, E, R, T, O)
+
+El vector del apellido es ~(F, L, O, R, E, Z)
+
+El vector del apellido ordenado alfabeticamente es ~(E, F, L, O, R, Z)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{rbind}\NormalTok{(name[}\DecValTok{9}\SpecialCharTok{:}\DecValTok{14}\NormalTok{],name[}\DecValTok{9}\SpecialCharTok{:}\DecValTok{14}\NormalTok{],name[}\DecValTok{9}\SpecialCharTok{:}\DecValTok{14}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4] [,5] [,6]
+## [1,] "F"  "L"  "O"  "R"  "E"  "Z" 
+## [2,] "F"  "L"  "O"  "R"  "E"  "Z" 
+## [3,] "F"  "L"  "O"  "R"  "E"  "Z"
+\end{verbatim}
+
+\[ Apellido = \begin{equation*}\begin{pmatrix} F & L & O & R & E & Z\\ F & L & O & R & E & Z\\ F & L & O & R & E & Z 
+\end{pmatrix}\end{equation*}\]
+
+\end{document}

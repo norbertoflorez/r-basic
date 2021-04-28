@@ -1,0 +1,54 @@
+---
+title: "Tarea4"
+author: "Norberto Florez"
+date: "28/4/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Realizad los siguientes productos de matrices siguiente en R:
+
+```{r PUNTO1}
+A = matrix(data = 10:18, nrow = 3)
+B = matrix(data = 1:9, nrow = 3)
+t = 4
+```
+
+$$A \cdot B$$
+```{r PUNTO 1A}
+A%*%B
+```
+$$B \cdot A$$
+```{r PUNTO 1B}
+B%*%A
+
+```
+
+$$(A \cdot B)^{t}$$
+```{r PUNTO 1C}
+(A%*%B)^t
+
+```
+
+
+$$B^{t} \cdot A$$
+```{r PUNTO 1D}
+(B^t)%*%A
+
+```
+
+$$(A \cdot B)^{-1}$$
+```{r PUNTO 1E}
+(A%*%B)^(-1)
+
+```
+
+$$A^{-1} \cdot B^{t}$$
+```{r PUNTO 1F}
+(A^-1)%*%(B^t)
+
+```
+
