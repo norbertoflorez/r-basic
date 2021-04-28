@@ -2,18 +2,30 @@
 title: "Tarea4"
 author: "Norberto Florez"
 date: "28/4/2021"
-output: html_document
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Realizad los siguientes productos de matrices siguiente en R:
+#### Punto 1 - Realizad los siguientes productos de matrices siguiente en R:
+
+
+$$ A = \begin{equation*}\begin{pmatrix} 1 & 2 & 3 & 4\\ 4 & 3 & 2 & 1\\ 0 & 1 & 0 & 2 
+\\ 3 & 0 & 4 & 0\end{pmatrix}\end{equation*}$$
+
+$$ B = \begin{equation*}\begin{pmatrix} 4 & 3 & 2 & 1\\ 0 & 3 & 0 & 4
+\\ 1 & 2 & 3 & 4\\ 0 & 1 & 0 & 2\end{pmatrix}\end{equation*}$$
 
 ```{r PUNTO1}
-A = matrix(data = 10:18, nrow = 3)
-B = matrix(data = 1:9, nrow = 3)
+A = rbind(1:4,4:1,c(0,1,0,2), c(3,0,4,0))
+A
+B = rbind(4:1,c(0,3,0,4),1:4, c(0,1,0,2))
+B
 t = 4
 ```
 
@@ -48,7 +60,44 @@ $$(A \cdot B)^{-1}$$
 
 $$A^{-1} \cdot B^{t}$$
 ```{r PUNTO 1F}
-(A^-1)%*%(B^t)
+(A^(-1))%*%(B^t)
 
 ```
+
+#### Punto 2 - Considerad en un vector los números de vuestro DNI y llamadlo dni.
+
+$$dni = (9, 4, 1, 5, 1, 0, 0, 9)$$
+```{r}
+dni = c(9, 4, 1, 5, 1, 0, 0, 9)
+```
+
+
+El valor de $dni^{2}$ es \ \ \ (`r dni^2`)
+
+El valor de $\sqrt{dni}$ es \ \ \ (`r sqrt(dni)`)
+
+La suma Acumulada del vector DNI es \ \ \ `r acum=cumsum(dni)` `r acum[8]`
+
+
+
+#### Punto 3 - Considerad el vector de las letras de vuestro nombre y apellido. Llamadlo name.
+
+$$name = (N,O,R,B,E,R,T,O,F,L,O,R,E,Z)$$
+```{r}
+name = c("N","O","R","B","E","R","T","O","F","L","O","R","E","Z")
+
+```
+
+El vector del nombre es \  (`r name[1:8]`)
+
+El vector del apellido es \ (`r name[9:14]`)
+
+El vector del apellido ordenado alfabeticamente es \ (`r sort(name[9:14])`)
+
+
+```{r}
+rbind(name[9:14],name[9:14],name[9:14])
+```
+$$ Apellido = \begin{equation*}\begin{pmatrix} F & L & O & R & E & Z\\ F & L & O & R & E & Z\\ F & L & O & R & E & Z 
+\end{pmatrix}\end{equation*}$$
 
