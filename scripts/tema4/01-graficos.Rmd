@@ -123,3 +123,21 @@ legend("bottomleft", col=c("blue","green","purple"), legend = c("seno","coseno",
 
 ```
 
+## Tarea 6
+
+
+### 1. Con una sola instrucción, dibujad el gráfico de la función y=x^2−3x+30 entre −15 y 15. De título, poned “Una parábola”. De etiquetas, en el eje 0X poned, en formato matemático, "x"; y en el eje 0Y, introducid $y=x^2−3x+30$, también en formato matemático. Tenéis que utilizar la función curve()
+
+```{r}
+curve(x^2 - 3*x + 30, xlim = c(-15,15), main = "Una parábola", col = "red", lwd = 2, ylab = expression(y=x^2-3*x+30), xlab = "x")
+```
+
+### 2. Considerando lo que habéis obtenido en el ejercicio anterior y siendo y = f(x) = x^2−3x+30 e I = [-15:15], si en vez de utilizar la función curve(), utilizamos la función plot(), ¿es correcta la sentencia plot(f(I)) para representar la curva f en el intervalo I? En otras palabras, dan ambas sentencias la misma gráfica? Obviamente, en la sentencia plot(f(I)) se han omitido el resto de parámetros requeridos en el ejercicio anterior porque no influyen para nada en la curva. Tanto si la respuesta es afirmativa como negativa, cread la función f en R y argumentad vuestra respuesta, considerando todos los parámetros requeridos (título y etiquetas de ambos ejes).
+
+```{r}
+i = -15:15
+f = function(x){x^2 - 3*x + 30}
+plot(f(i), main = "Una parábola", xlim = c(-15,15), col = "red", lwd = 2, ylab = expression(y=x^2-3*x+30), xlab = "x")
+```
+
+Respuesta: No dan lo mismo no porque se usen dos instrucciones diferentes (plot y curve) sino porque con el f(i) del segundo ejercicio se calculan puntos en el eje "y" pero de manera independiente al eje x, por los cual R asume que el primer punto calculado de f(i) se ubica a partir de x=0. 
