@@ -114,3 +114,12 @@ text(alumnos,notas, labels = c("S","A","N","E","N","S","A","A","E","N"), pos = c
 
 ```
 
+```{r}
+x=seq(0,2*pi,0.1)
+plot(x,sin(x), type="l", col="blue", lwd=3, xlab = "", ylab = "")
+lines(x,cos(x), col="green", lwd=3)
+lines(x,tan(x), col="purple", lwd=3)
+legend("bottomleft", col=c("blue","green","purple"), legend = c("seno","coseno","tangente"),lwd = 3, bty = "l")
+
+```
+
