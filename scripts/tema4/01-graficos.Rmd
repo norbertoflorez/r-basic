@@ -141,3 +141,28 @@ plot(f(i), main = "Una parábola", xlim = c(-15,15), col = "red", lwd = 2, ylab 
 ```
 
 Respuesta: No dan lo mismo no porque se usen dos instrucciones diferentes (plot y curve) sino porque con el f(i) del segundo ejercicio se calculan puntos en el eje "y" pero de manera independiente al eje x, por los cual R asume que el primer punto calculado de f(i) se ubica a partir de x=0. 
+
+### 3. Dibuja un gráfico semilogarítmico de la función $y = 5\cdot 2^x$ entre -10 y 25. Utilizad la función curve(). Mostrad solo la etiqueta del eje 0Y, que ponga $y = 5\cdot 2^x$ en formato matemático.
+
+```{r}
+curve(5*2^x, main = "Grafica punto 3", log = "y", xlim = c(-10,25), col = "blue", lwd = 2, ylab = expression(y=2^x*5))
+```
+
+### 4. Dibuja el gráfico de la función y_1 = 3x utilizando la función curve(). Añade la curva y_2=-3x, entre -10 y 20. El gráfico no debe mostrar ninguna etiqueta. La primera curva debe ser de color azul y la segunda, de color verde. Ponedle de título "2 rectas" y de subtítulo "Dos rectas con pendiente opuesto". Añadid al gráfico un recuadro (con la esquina superior izquierda en el punto (13,10)) que indique que la función 3x es la azul y la -3x verde.
+
+```{r}
+curve(3*x, xlim = c(-10,20), col = "blue", lwd = 1)
+curve(-3*x, col = "green", lwd = 1, add = TRUE)
+title(main = "2 rectas\n\n", sub = "Dos rectas con pendiente opuesto")
+legend(13,10, col=c("blue","green"), legend = c("3x","-3x"),lwd = 3, bty = "l")
+
+## 5. Dad la instrucción que añada a un gráfico anterior la recta horizontal y = 0 de color rojo con un grosor de 5 puntos.
+
+abline(h = 0, lty = "dotdash", col = "red", lwd = 5)
+
+## 6. Dad la instrucción que añada a un gráfico anterior la recta y = 2x+7 de color azul con un grosor de 2 puntos.
+
+curve(2*x+7, col = "blue", lwd = 2, add = TRUE)
+
+```
+
