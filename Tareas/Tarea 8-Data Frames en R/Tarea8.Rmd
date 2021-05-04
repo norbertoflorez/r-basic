@@ -1,0 +1,73 @@
+---
+title: "Tarea8-Medals"
+author: "Norberto Florez"
+date: "4/5/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+df = read.csv("C:/Users/ASUS/Documents/GitHub/r-basic/data/medals.csv", stringsAsFactors = TRUE, header = TRUE, sep = ",", dec = ".")
+```
+
+### 1. ¿Cuantos deportistas aparecen en el data frame?
+
+```{r}
+str(df)
+nrow(df)
+```
+
+Respuesta: 2311 estudiantes.
+
+### 2. ¿Cuantos han ganado medallas de oro, cuantos de plata y cuantos de bronce?
+
+```{r}
+table(df$Medal)
+```
+
+## Respuesta
+## Bronze Gold Silver
+## 764 774 773
+
+Respuesta: 1386 hombres, 802 mujeres
+
+### 3. ¿En cuantos lugares se han hecho olimpiadas de invierno?
+
+```{r}
+nlevels(df$City)
+```
+
+
+
+### 4. ¿Cuantos hombres y cuantas mujeres hay?
+
+```{r}
+table(df$Event.gender)
+```
+
+### 5. ¿En qué año participaron más deportistas?
+
+```{r}
+table(df$Year)
+which.max(table(df$Year))
+
+```
+
+### 6. El campo NOC indica el país del ganador de la medalla. ¿Qué país puede presumir de haber ganado más medallas de oro en los juegos de invierno entre 1960 y 1996?
+
+```{r}
+
+subset(df, Year >= 1960, ) -> df1
+str(df1)
+table(df1$NOC)
+which.max(table(df1$NOC))
+
+```
+
+
+
+
+
