@@ -33,6 +33,6 @@ prop.table(table(sex, ans, place))#Frec. Rel. Globales
 prop.table(table(sex, ans, place), margin = 3) # Frec. Rel. Marginal por Lugar
 prop.table(table(sex, ans, place), margin = c(1, 3)) # Frec. Rel. Marg. por Sexo y País
 
-ftable(prop.table(table(sex, ans, place)))
+ftable(prop.table(table(sex, ans, place), margin = 3), col.vars = c("sex","ans"))
 ```
 
