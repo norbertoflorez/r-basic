@@ -1,0 +1,30 @@
+---
+title: "Ejercicio_tab_conting"
+author: "Norberto Florez"
+date: "7/5/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+datos_h = rep('H', 6)
+datos_m = rep('M', 14)
+datos = factor(c(datos_h, datos_m))
+table(datos)
+prop.table(table(datos))
+names(which(table(datos) == max(table(datos))))
+```
+
+```{r}
+datos_h = rep('H', 6)
+datos_m = rep('M', 14)
+datos = factor(c(datos_h, datos_m))
+respuestas = factor(sample(c("SI","NO"), size = length(datos), replace = TRUE))
+table(respuestas, datos)
+table(datos, respuestas)
+
+```
+
