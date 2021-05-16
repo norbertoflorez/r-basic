@@ -19,7 +19,7 @@ El total de individuos de la tabla de datos es `r total`.
 
 ```{r}
 prop.table(HairEyeColor, margin = 3)
-prop.table(HairEyeColor, margin = c(1,2))
+ftable(prop.table(HairEyeColor, margin = c(1,2)), col.vars = c(3,1))
 ```
 
 ```{r}
