@@ -1,0 +1,95 @@
+---
+title: "Tarea10"
+author: "Norberto Florez"
+date: "18/5/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Utiliza str() y head() para explorar la estructura, y con help(), mirar el significado de cada variable.
+
+```{r}
+library(MASS)
+str(birthwt)
+head(birthwt)
+##help(birthwt)
+```
+
+Respuesta:
+
+Description
+The birthwt data frame has 189 rows and 10 columns. The data were collected at Baystate Medical Center, Springfield, Mass during 1986.
+
+Usage
+birthwt
+Format
+This data frame contains the following columns:
+
+low
+indicator of birth weight less than 2.5 kg.
+
+age
+mother's age in years.
+
+lwt
+mother's weight in pounds at last menstrual period.
+
+race
+mother's race (1 = white, 2 = black, 3 = other).
+
+smoke
+smoking status during pregnancy.
+
+ptl
+number of previous premature labours.
+
+ht
+history of hypertension.
+
+ui
+presence of uterine irritability.
+
+ftv
+number of physician visits during the first trimester.
+
+bwt
+birth weight in grams.
+
+Source
+Hosmer, D.W. and Lemeshow, S. (1989) Applied Logistic Regression. New York: Wiley
+
+References
+Venables, W. N. and Ripley, B. D. (2002) Modern Applied Statistics with S. Fourth edition. Springer.
+
+## Calcula una tabla de frecuencias relativas marginales de los pares (raza de la madre, peso inferior a 2.5 kg o no) que permita ver si la raza de la madre influye en el peso del bebé.
+
+```{r}
+t1 = birthwt[c("low", "race")]
+t1$low = as.factor(t1$low)
+t1$race = as.factor(t1$race)
+levels(t1$low) = c("Mayor2.5KG", "Menor2.5Kg")
+levels(t1$race) = c("white", "black", "other")
+table(t1)
+round(prop.table(table(t1), margin = 2),3)
+```
+Respuesta:
+Se observa que en las mujeres de raza blanca hay considerablemente menor tendencia a que los niños nazcan con peso por debajo de los 2.5Kg (solo un 24%), mientras que en las mujeres de raza negra es muy similar el valor entre los niños que nacen con peso por debajo de 2.5Kg (57%)y los que no. Para otras razas se agudiza la diferencia y los niños con peso menor a 2.5Kg representan un 62.7%.
+
+## Dibuja un diagrama de mosaico de la tabla del ejercicio anterior.
+
+```{r}
+plot(table(t1))
+
+```
+
+## Dibuja un diagrama bidimensional de barras, con las barras organizadas en bloques, que permita visualizar la información de los ejercicios anteriores. Aprovecha para nombres adecuados a los bloques, colores a las barras, y añadir una leyenda que explique qué representa cada barra.
+
+```{r}
+barplot(prop.table(table(t1), margin = 2), beside = TRUE, col = c("green", "red"), main = "Desnutrición en niños recien nacidos \n dependiendo de la raza de la madre", ylim = c(0, 0.8))
+```
+Respuesta:
+Se observa que en las mujeres de raza blanca hay considerablemente menor tendencia a que los niños nazcan con peso por debajo de los 2.5Kg (solo un 24%), mientras que en las mujeres de raza negra es muy similar el valor entre los niños que nacen con peso por debajo de 2.5Kg (57%)y los que no. Para otras razas se agudiza la diferencia y los niños con peso menor a 2.5Kg representan un 62.7%.
+
