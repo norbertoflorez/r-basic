@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(MASS)
 str(birthwt)
 head(birthwt)
-##help(birthwt)
+help(birthwt)
 ```
 
 Respuesta:
