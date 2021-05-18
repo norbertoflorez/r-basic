@@ -64,7 +64,7 @@ Hosmer, D.W. and Lemeshow, S. (1989) Applied Logistic Regression. New York: Wile
 References
 Venables, W. N. and Ripley, B. D. (2002) Modern Applied Statistics with S. Fourth edition. Springer.
 
-## Calcula una tabla de frecuencias relativas marginales de los pares (raza de la madre, peso inferior a 2.5 kg o no) que permita ver si la raza de la madre influye en el peso del bebé.
+## 2. Calcula una tabla de frecuencias relativas marginales de los pares (raza de la madre, peso inferior a 2.5 kg o no) que permita ver si la raza de la madre influye en el peso del bebé.
 
 ```{r}
 t1 = birthwt[c("low", "race")]
@@ -78,18 +78,68 @@ round(prop.table(table(t1), margin = 2),3)
 Respuesta:
 Se observa que en las mujeres de raza blanca hay considerablemente menor tendencia a que los niños nazcan con peso por debajo de los 2.5Kg (solo un 24%), mientras que en las mujeres de raza negra es muy similar el valor entre los niños que nacen con peso por debajo de 2.5Kg (57%)y los que no. Para otras razas se agudiza la diferencia y los niños con peso menor a 2.5Kg representan un 62.7%.
 
-## Dibuja un diagrama de mosaico de la tabla del ejercicio anterior.
+## 3. Dibuja un diagrama de mosaico de la tabla del ejercicio anterior.
 
 ```{r}
 plot(table(t1))
 
 ```
 
-## Dibuja un diagrama bidimensional de barras, con las barras organizadas en bloques, que permita visualizar la información de los ejercicios anteriores. Aprovecha para nombres adecuados a los bloques, colores a las barras, y añadir una leyenda que explique qué representa cada barra.
+## 4. Dibuja un diagrama bidimensional de barras, con las barras organizadas en bloques, que permita visualizar la información de los ejercicios anteriores. Aprovecha para nombres adecuados a los bloques, colores a las barras, y añadir una leyenda que explique qué representa cada barra.
 
 ```{r}
-barplot(prop.table(table(t1), margin = 2), beside = TRUE, col = c("green", "red"), main = "Desnutrición en niños recien nacidos \n dependiendo de la raza de la madre", ylim = c(0, 0.8))
+barplot(prop.table(table(t1), margin = 2), beside = TRUE, col = c("green", "red"), main = "Desnutrición en niños recien nacidos \n dependiendo de la raza de la madre", ylim = c(0, 1), legend.text = TRUE)
 ```
+
+## 5. ¿Se puede obtener alguna conclusión de la tabla y el diagrama de barras anterior? Argumenta tu respuesta
+
 Respuesta:
 Se observa que en las mujeres de raza blanca hay considerablemente menor tendencia a que los niños nazcan con peso por debajo de los 2.5Kg (solo un 24%), mientras que en las mujeres de raza negra es muy similar el valor entre los niños que nacen con peso por debajo de 2.5Kg (57%)y los que no. Para otras razas se agudiza la diferencia y los niños con peso menor a 2.5Kg representan un 62.7%.
+
+## 6. Repite los cuatro ejercicios anteriores para los pares (madre fumadora o no, peso inferior a 2.5 kg o no) y para los pares (madre hipertensa o no, peso inferior a 2.5 kg o no.
+
+```{r}
+birthwt$low = as.factor(birthwt$low)
+birthwt$smoke = as.factor(birthwt$smoke)
+levels(birthwt$low) = c("Mayor2.5KG", "Menor2.5Kg")
+levels(birthwt$smoke) = c("Fumadora", "No_fumadora")
+table(birthwt$low,birthwt$smoke)
+round(prop.table(table(birthwt$low,birthwt$smoke), margin = 2),3)
+plot(table(birthwt$low,birthwt$smoke))
+barplot(prop.table(table(birthwt$low,birthwt$smoke), margin = 2), beside = TRUE, col = c("white", "blue"), main = "Desnutrición en niños recien nacidos \n dependiendo si la madre fuma o no", ylim = c(0, 1), legend.text = TRUE)
+```
+
+```{r}
+birthwt$low = as.factor(birthwt$low)
+birthwt$ht = as.factor(birthwt$ht)
+levels(birthwt$low) = c("Mayor2.5KG", "Menor2.5Kg")
+levels(birthwt$ht) = c("No_hipertensa", "Hipertensa")
+table(birthwt$low,birthwt$ht)
+round(prop.table(table(birthwt$low,birthwt$ht), margin = 2),3)
+plot(table(birthwt$low,birthwt$ht))
+barplot(prop.table(table(birthwt$low,birthwt$ht), margin = 2), beside = TRUE, col = c("orange", "green"), main = "Desnutrición en niños recien nacidos \n dependiendo si la madre es hipertensa", ylim = c(0, 1), legend.text = TRUE)
+```
+
+## 7. Calcula una tabla de frecuencias relativas marginales de las ternas (raza de la madre, madre fumadora o no, peso inferior a 2.5 kg o no) que permita ver si la raza de la madre y su condición de fumadora o no fumadora influyen en el peso del bebé.
+
+```{r}
+birthwt$low = as.factor(birthwt$low)
+birthwt$race = as.factor(birthwt$race)
+birthwt$smoke = as.factor(birthwt$smoke)
+levels(birthwt$low) = c("Mayor2.5KG", "Menor2.5Kg")
+levels(birthwt$race) = c("white", "black", "other")
+levels(birthwt$smoke) = c("Fumadora", "No_fumadora")
+ftable(table(birthwt$low,birthwt$smoke,birthwt$race), col.vars = c(2,3))
+round(ftable(prop.table(table(birthwt$low,birthwt$smoke,birthwt$race), margin = c(2,3)), col.vars = c(2,3)),3)
+
+```
+
+## 8. Dibuja un diagrama de mosaico de la tabla del ejercicio anterior.
+
+```{r}
+plot(table(birthwt$low,birthwt$smoke,birthwt$race))
+```
+
+
+
 
