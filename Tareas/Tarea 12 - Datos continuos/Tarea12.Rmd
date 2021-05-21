@@ -1,0 +1,66 @@
+---
+title: "Tarea12"
+author: "Norberto Florez"
+date: "20/5/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+setwd("C:/Users/ASUS/Documents/GitHub/r-basic/data")
+grades = read.table("grades.txt", header = TRUE)
+head(grades)
+str(grades)
+```
+
+## 1. Calcula la media, la mediana y la moda redondeada a dos cifras decimales de las notas numéricas de los exámenes tanto de forma conjunta como por estudio universitario. ¿En qué grupo observamos la nota más alta? ¿Qué grupo está por encima de la media de estudiantes?
+
+```{r}
+as.numeric(names(which(table(grades$nota)==max(table(grades$nota)))))
+round(summary(grades$nota),2)
+aggregate(grades$nota~grades$estudio, FUN = summary)
+by(grades$nota, grades$estudio, FUN = summary)
+```
+
+Respuestas:
+
+La mayor nota la obtuvieron los industriales.
+
+El grupo de mates está por encima de la media.
+
+## 2. ¿En qué grupo observamos más variación de notas? Justifica tu respuesta
+
+```{r}
+by(grades$nota, grades$estudio, FUN = sd)
+```
+
+Respuesta: En el grupo de mates existe la mayor variación de notas pues tiene la mayor desviación estandar.
+
+## 3. ¿Hay mucha diferencia entre el grupo que has respondido en el ejercicio 1 y en el ejercicio 2? Intenta dar una explicación objetiva del suceso
+
+La principal diferencia es que la media de las notas del grupo de mates es considerablemente mayor a la del grupo de industriales. El tercer cuartil del grupo de mates está por encima de 5.93 mientras que el tercer cuartil del grupo de industriales está por encima de 4.77.
+
+## 4. Dibuja en un único gráfico los cuatro diagramas de caja, uno para cada grupo. Añade así mismo la nota media, pon nombre, título y color al gráfico para documentar el gráfico correctamente.
+
+```{r}
+boxplot(grades$nota~grades$estudio, ylab = "Notas", xlab = "Grupo", main = "Gráfico de cajas de notas de estudiantes según grupos de estudio", col = c("green", "yellow", "blue", "purple"))
+medias = by(grades$nota, grades$estudio, FUN = mean)
+points(medias, col = "white", pch = 15)
+```
+
+## 5. ¿Observas algunos valores atípicos en el boxplot anterior? ¿A qué grupo pertence?
+
+Se ven outliers en los grupos de industriales, informática y telemática. El mínimo del grupo de informática empieza mas arriba casi en 2, y hay una gran cantidad de alumnos en el rango de 3 y 3.5 (valores aprox del primer cuartil y la media)
+
+## 6. Indica a partir del boxplot anterior en qué grupo observamos más variedad de notas.
+
+Se ve mas variedad de notas en el grupo de Mates. Esto se evidencia en el tamaño del box y la ampliud de los límites respecto de los box de los otros grupos.
+
+## 7. En base a todo lo anterior, ¿puedes afirmar de forma estadística que el examen de carrera ha ido mejor en algún estudio que en los demás?
+
+El examen de carrera ha ido mejor para el grupo de mates.
+
+
