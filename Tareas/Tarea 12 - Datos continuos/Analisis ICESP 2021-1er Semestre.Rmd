@@ -1,0 +1,86 @@
+---
+title: "ANALISIS PRIMER SEMESTRE DEL 2021 - ICESP PERÚ"
+geometry: left=3cm,right=3cm,top=2cm,bottom=2cm
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r include=FALSE}
+library(tidyverse)
+library(datos)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+setwd("C:/Users/ASUS/Documents/GitHub/r-basic/data")
+Tabla_datos = read.csv("Analisis de movimientos ICESP.csv", header = TRUE, sep = ";")
+Tabla_datos$Monto = as.numeric(Tabla_datos$Monto)
+Tabla_datos$Monto_abs = as.numeric(Tabla_datos$Monto_abs)
+str(Tabla_datos)
+```
+# **Entradas de dinero versus Salidas de dinero**
+
+```{r echo=FALSE, fig.align='center'}
+par(mfrow=c(1,1), mai = c(0.1, 0.1, 0.1, 0.1))
+
+Tabla1 = as.data.frame(aggregate(Monto_abs ~  Tipo.de.movimiento, data = Tabla_datos, FUN = sum))
+pie(Tabla1$Monto_abs, labels = Tabla1$Monto_abs, col = c('blue', 'yellow'), radius = 0.5)
+legend("topleft", legend = c("Entradas", "Salidas"), fill =  c('blue', 'yellow'))
+
+```
+
+# **Tipo de movimiento (Costo, gasto, ingreso)**
+
+```{r echo=FALSE, fig.align='center'}
+Tabla2 = as.data.frame(aggregate(Monto_abs ~  Subtipo.de.movimiento, data = Tabla_datos, FUN = sum))
+Tabla2
+pie(Tabla2$Monto_abs, labels = Tabla2$Monto_abs, col = c('blue', 'yellow', 'orange'), main = "Tipo de movimiento")
+legend("topleft", legend = c("Costo", "Gasto", "Ingreso"), fill =  c('blue', 'yellow', 'orange'))
+```
+
+# **Tabla de beneficiarios de los pagos de ICESP Perú**
+
+```{r echo=FALSE, fig.align='center'}
+Tabla3 = as.data.frame(aggregate(Monto_abs ~  Beneficiario, data = Tabla_datos, FUN = sum, na.rm = TRUE))
+Tabla3
+```
+
+# **Centros de costos**
+
+```{r echo=FALSE, fig.align='center'}
+Tabla_datos_mod = subset(Tabla_datos, Tabla_datos$Tipo.de.movimiento != "Entrada")
+Tabla4 = as.data.frame(aggregate(Monto_abs ~  Centro.de.costos, data = Tabla_datos_mod, FUN = sum, na.rm = TRUE))
+Tabla4
+```
+
+# **Facturación proyectos**
+
+```{r echo=FALSE, fig.align='center'}
+Tabla_datos_mod2 = subset(Tabla_datos, Tabla_datos$Documento.soporte == "Factura de venta")
+Tabla6 = as.data.frame(aggregate(Monto_abs ~  Centro.de.costos, data = Tabla_datos_mod2, FUN = sum, na.rm = TRUE))
+Tabla6
+```
+
+# **Margen bruto de proyectos**
+
+```{r echo=FALSE, fig.align='center'}
+Tabla_datos_mod1 = subset(Tabla_datos, Tabla_datos$Centro.de.costos != "Administracion")
+Tabla5 = as.data.frame(aggregate(Monto ~  Centro.de.costos, data = Tabla_datos_mod1, FUN = sum, na.rm = TRUE))
+Tabla5
+```
+
+
+# **Facturación por cliente**
+
+```{r echo=FALSE, fig.align='center'}
+Tabla_datos_mod3 = subset(Tabla_datos, Tabla_datos$Documento.soporte == "Factura de venta")
+Tabla6 = as.data.frame(aggregate(Monto_abs ~  Cliente, data = Tabla_datos_mod3, FUN = sum, na.rm = TRUE))
+Tabla6
+pie(Tabla6$Monto_abs, labels = Tabla6$Cliente, col = c('blue', 'yellow', 'red', 'orange', 'green'), radius = 1)
+```
+
+

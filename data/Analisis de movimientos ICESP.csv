@@ -1,0 +1,247 @@
+Mes;Tipo de movimiento;Subtipo de movimiento;Documento soporte;Beneficiario;Centro de costos;Cliente;Monto;Monto_abs
+Enero;Entrada;Ingreso;Estado de cuenta;NA;NA;NA;830 ;830
+Enero;Salida;Gasto;Factura de compra;Contabilidad;Administracion;NA;-191 ;191
+Enero;Salida;Gasto;Voucher detracciones;Contabilidad;Administracion;NA;-26 ;26
+Enero;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-56 ;56
+Enero;Salida;Costo;Factura de compra;Aerolineas;200312-P01 IEP Traslado de servidores ICCP a Pucallpa;IEP;-167 ;167
+Enero;Salida;Costo;Factura de compra;Test Covid;200312-P01 IEP Traslado de servidores ICCP a Pucallpa;IEP;-23 ;23
+Enero;Salida;Costo;Factura de compra;JT;191207-P01 PEBAR Sum cont elevador muest (incluye PLC nuevo);Perubar;-978 ;978
+Enero;Salida;Costo;Voucher detracciones;JT;191207-P01 PEBAR Sum cont elevador muest (incluye PLC nuevo);Perubar;-134 ;134
+Enero;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-69 ;69
+Enero;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-352 ;352
+Enero;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-87 ;87
+Enero;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-380 ;380
+Enero;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-306 ;306
+Enero;Salida;Costo;Factura de compra;Aerolineas;200312-P01 IEP Traslado de servidores ICCP a Pucallpa;IEP;-141 ;141
+Enero;Salida;Gasto;NPS Sunat;Sunat;Administracion;NA;-93 ;93
+Enero;Salida;Costo;Factura de compra;Hoteles;200312-P01 IEP Traslado de servidores ICCP a Pucallpa;Perubar;-146 ;146
+Enero;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-91 ;91
+Enero;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-80 ;80
+Enero;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-11 ;11
+Enero;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-750 ;750
+Enero;Salida;Costo;Factura de compra;Otros;200312-P01 IEP Traslado de servidores ICCP a Pucallpa;NA;-13 ;13
+Enero;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-357 ;357
+Enero;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-450 ;450
+Enero;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-310 ;310
+Enero;Salida;Gasto;NPS Sunat;Sunat;Administracion;NA;-424 ;424
+Enero;Salida;Gasto;Factura de compra;Mapfre;Administracion;NA;-69 ;69
+Enero;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-50 ;50
+Febrero;Salida;Gasto;Factura de compra;Contabilidad;Administracion;NA;-190 ;190
+Febrero;Salida;Gasto;Voucher detracciones;Contabilidad;Administracion;NA;-26 ;26
+Febrero;Salida;Costo;Factura de compra;Examenes medicos;201009-P01 PEBAR Actualización de SCADA a la versión CITECT 2018 R2;Perubar;-62 ;62
+Febrero;Salida;Costo;Factura de compra;Test Covid;201009-P01 PEBAR Actualización de SCADA a la versión CITECT 2018 R2;Perubar;-37 ;37
+Febrero;Salida;Costo;Factura de compra;Otros;201009-P01 PEBAR Actualización de SCADA a la versión CITECT 2018 R2;Perubar;-34 ;34
+Febrero;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-69 ;69
+Febrero;Salida;Costo;Factura de compra;Examenes medicos;201009-P01 PEBAR Actualización de SCADA a la versión CITECT 2018 R2;Perubar;-62 ;62
+Febrero;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-500 ;500
+Febrero;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-352 ;352
+Febrero;Salida;Costo;Factura de compra;Otros;201009-P01 PEBAR Actualización de SCADA a la versión CITECT 2018 R2;Perubar;-53 ;53
+Febrero;Salida;Costo;Factura de compra;Otros;201009-P01 PEBAR Actualización de SCADA a la versión CITECT 2018 R2;Perubar;-15 ;15
+Febrero;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-200 ;200
+Febrero;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-304 ;304
+Febrero;Salida;Costo;Factura de compra;Test Covid;201009-P01 PEBAR Actualización de SCADA a la versión CITECT 2018 R2;Perubar;-37 ;37
+Febrero;Salida;Costo;Factura de compra;Otros;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-8 ;8
+Febrero;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-83 ;83
+Febrero;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-91 ;91
+Febrero;Salida;Costo;Factura de compra;Otros;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-4 ;4
+Febrero;Salida;Costo;Factura de compra;Aerolineas;200312-P01 IEP Traslado de servidores ICCP a Pucallpa;IEP;-429 ;429
+Febrero;Salida;Costo;Factura de compra;Test Covid;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-23 ;23
+Febrero;Salida;Costo;Factura de compra;Test Covid;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-37 ;37
+Febrero;Salida;Costo;Factura de compra;Otros;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-12 ;12
+Febrero;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-357 ;357
+Febrero;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-49 ;49
+Marzo;Salida;Gasto;Factura de compra;Mapfre;Administracion;NA;-68 ;68
+Marzo;Salida;Gasto;Factura de compra;Contabilidad;Administracion;NA;-189 ;189
+Marzo;Salida;Gasto;Voucher detracciones;Contabilidad;Administracion;NA;-26 ;26
+Marzo;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-11 ;11
+Marzo;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-92 ;92
+Marzo;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-81 ;81
+Marzo;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-36 ;36
+Marzo;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-22 ;22
+Marzo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-8 ;8
+Marzo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-8 ;8
+Marzo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-8 ;8
+Marzo;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-36 ;36
+Marzo;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-26 ;26
+Marzo;Salida;Costo;Factura de compra;Ceyesa;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-140 ;140
+Marzo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-12 ;12
+Marzo;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-750 ;750
+Marzo;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-455 ;455
+Marzo;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-299 ;299
+Marzo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-4 ;4
+Marzo;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-344 ;344
+Marzo;Salida;Costo;Factura de compra;Examenes medicos;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-179 ;179
+Marzo;Salida;Gasto;Factura de compra;Mapfre;Administracion;NA;-103 ;103
+Marzo;Salida;Costo;Factura de compra;Otros;200609-P01 HPG Monitoreo del transformador y señales de la línea;HPG;-41 ;41
+Marzo;Salida;Costo;Factura de compra;Ceyesa;200609-P01 HPG Monitoreo del transformador y señales de la línea;HPG;-123 ;123
+Marzo;Salida;Costo;Factura de compra;Otros;200609-P01 HPG Monitoreo del transformador y señales de la línea;HPG;-58 ;58
+Marzo;Salida;Gasto;Factura de compra;Otros;Administracion;NA;-10 ;10
+Marzo;Salida;Costo;Factura de compra;Examenes medicos;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-60 ;60
+Marzo;Salida;Costo;Factura de compra;Charlas HSE Anuales;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-204 ;204
+Marzo;Salida;Costo;Factura de compra;Otros;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-154 ;154
+Marzo;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-68 ;68
+Marzo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-4 ;4
+Marzo;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-30 ;30
+Marzo;Salida;Gasto;Factura de compra;Contabilidad;Administracion;NA;-242 ;242
+Marzo;Salida;Gasto;Voucher detracciones;Contabilidad;Administracion;NA;-34 ;34
+Marzo;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-750 ;750
+Marzo;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-30 ;30
+Marzo;Salida;Costo;Factura de compra;Haiwell;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-1150 ;1150
+Marzo;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-36 ;36
+Marzo;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-11 ;11
+Marzo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-4 ;4
+Marzo;Salida;Costo;Factura de compra;Test Covid;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-39 ;39
+Marzo;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-341 ;341
+Marzo;Salida;Costo;Factura de compra;Otros;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-4 ;4
+Marzo;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-455 ;455
+Marzo;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-296 ;296
+Marzo;Salida;Gasto;Factura de compra;Mapfre;Administracion;NA;-119 ;119
+Abril;Salida;Gasto;Factura de compra;Google;Administracion;NA;-29 ;29
+Abril;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-4 ;4
+Abril;Salida;Costo;Factura de compra;Otros;200609-P01 HPG Monitoreo del transformador y señales de la línea;HPG;-125 ;125
+Abril;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-222 ;222
+Abril;Salida;Gasto;Factura de compra;Contabilidad;Administracion;NA;-147 ;147
+Abril;Salida;Gasto;Voucher detracciones;Contabilidad;Administracion;NA;-20 ;20
+Abril;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-92 ;92
+Abril;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-81 ;81
+Abril;Salida;Costo;Factura de compra;Test Covid;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-36 ;36
+Abril;Salida;Gasto;Factura de compra;Otros;Administracion;Perubar;-21 ;21
+Abril;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-49 ;49
+Abril;Salida;Costo;Factura de compra;Otros;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-278 ;278
+Abril;Salida;Costo;Factura de compra;Charlas HSE Anuales;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-156 ;156
+Abril;Salida;Costo;Factura de compra;Charlas HSE Anuales;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-65 ;65
+Abril;Salida;Costo;Voucher detracciones;Charlas HSE Anuales;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-58 ;58
+Abril;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-347 ;347
+Abril;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-55 ;55
+Abril;Salida;Costo;Factura de compra;Rhona;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-115 ;115
+Abril;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-530 ;530
+Abril;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-455 ;455
+Abril;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-150 ;150
+Abril;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-301 ;301
+Abril;Salida;Costo;Factura de compra;Otros;200609-P01 HPG Monitoreo del transformador y señales de la línea;HPG;-401 ;401
+Abril;Salida;Costo;Factura de compra;Rhona;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-230 ;230
+Abril;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-70 ;70
+Abril;Salida;Costo;Factura de compra;Otros;200609-P01 HPG Monitoreo del transformador y señales de la línea;HPG;-22 ;22
+Abril;Salida;Costo;Factura de compra;Test Covid;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-36 ;36
+Abril;Salida;Costo;Factura de compra;Rhona;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-55 ;55
+Abril;Salida;Gasto;Factura de compra;Otros;Administracion;NA;-83 ;83
+Abril;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-135 ;135
+Abril;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-49 ;49
+Abril;Salida;Costo;Factura de compra;Rhona;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-254 ;254
+Abril;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-11 ;11
+Abril;Salida;Costo;Factura de compra;Otros;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-12 ;12
+Abril;Salida;Costo;Factura de compra;Rhona;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-19 ;19
+Abril;Salida;Costo;Factura de compra;Rhona;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-54 ;54
+Abril;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-347 ;347
+Abril;Salida;Costo;Factura de compra;Test Covid;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-56 ;56
+Abril;Salida;Costo;Factura de compra;Otros;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-12 ;12
+Abril;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-56 ;56
+Abril;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-29 ;29
+Abril;Salida;Gasto;Factura de compra;Mapfre;Administracion;NA;-93 ;93
+Mayo;Salida;Costo;Factura de compra;Otros;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-12 ;12
+Mayo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-82 ;82
+Mayo;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-53 ;53
+Mayo;Salida;Gasto;Factura de compra;Contabilidad;Administracion;NA;-164 ;164
+Mayo;Salida;Gasto;Factura de compra;Google;Administracion;NA;-28 ;28
+Mayo;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-544 ;544
+Mayo;Salida;Costo;Factura de compra;Aerolineas;210312-P02 V2 HPG Supervisión a la Integración de control nueva planta Solar;COLCA;-48 ;48
+Mayo;Salida;Costo;Factura de compra;Test Covid;210312-P02 V2 HPG Supervisión a la Integración de control nueva planta Solar;COLCA;-28 ;28
+Mayo;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-455 ;455
+Mayo;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-297 ;297
+Mayo;Salida;Costo;Factura de compra;Test Covid;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-19 ;19
+Mayo;Salida;Costo;Factura de compra;Hoteles;210312-P02 V2 HPG Supervisión a la Integración de control nueva planta Solar;COLCA;-83 ;83
+Mayo;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-86 ;86
+Mayo;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-342 ;342
+Mayo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-120 ;120
+Mayo;Salida;Costo;Factura de compra;Otros;210312-P02 V2 HPG Supervisión a la Integración de control nueva planta Solar;COLCA;-69 ;69
+Mayo;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-1039 ;1039
+Mayo;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-455 ;455
+Mayo;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-302 ;302
+Mayo;Salida;Gasto;Voucher CTS;Otros;Administracion;NA;-405 ;405
+Mayo;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-92 ;92
+Mayo;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-81 ;81
+Mayo;Salida;Gasto;Factura de compra;Otros;Administracion;NA;-40 ;40
+Mayo;Salida;Gasto;NPS Sunat;Sunat;Administracion;NA;-36 ;36
+Mayo;Salida;Gasto;NPS Sunat;Sunat;Administracion;NA;-319 ;319
+Mayo;Salida;Costo;Factura de compra;Test Covid;210312-P02 V2 HPG Supervisión a la Integración de control nueva planta Solar;COLCA;-29 ;29
+Mayo;Salida;Costo;Factura de compra;Otros;210312-P02 V2 HPG Supervisión a la Integración de control nueva planta Solar;COLCA;-36 ;36
+Mayo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-26 ;26
+Mayo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-41 ;41
+Mayo;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-100 ;100
+Mayo;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-275 ;275
+Mayo;Salida;Costo;Factura de compra;Aerolineas;210201-P01 IEP Mantenimiento anual SCADA;IEP;-79 ;79
+Mayo;Salida;Costo;Factura de compra;Aerolineas;210312-P02 V2 HPG Supervisión a la Integración de control nueva planta Solar;COLCA;-67 ;67
+Mayo;Salida;Costo;Factura de compra;Otros;210201-P01 IEP Mantenimiento anual SCADA;IEP;-91 ;91
+Mayo;Salida;Costo;Factura de compra;Test Covid;210312-P02 V2 HPG Supervisión a la Integración de control nueva planta Solar;COLCA;-24 ;24
+Mayo;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-13 ;13
+Mayo;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-53 ;53
+Mayo;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-48 ;48
+Mayo;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-35 ;35
+Mayo;Salida;Gasto;Factura de compra;Mapfre;Administracion;NA;-92 ;92
+Mayo;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-11 ;11
+Mayo;Salida;Costo;Factura de compra;Aerolineas;210201-P01 IEP Mantenimiento anual SCADA;IEP;-80 ;80
+Mayo;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-455 ;455
+Mayo;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-342 ;342
+Mayo;Salida;Costo;Factura de compra;JT;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-719 ;719
+Mayo;Salida;Costo;Factura de compra;JT;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-1208 ;1208
+Mayo;Salida;Costo;Factura de compra;JT;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-2884 ;2884
+Mayo;Salida;Costo;Factura de compra;JT;190601-P01 PEBAR Optimización sist control muestreador;Perubar;-889 ;889
+Mayo;Salida;Costo;Voucher detracciones;JT;210203-P01 PEBAR Sistema de control automatico de pulverizadoras;Perubar;-98 ;98
+Mayo;Salida;Costo;Voucher detracciones;JT;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-165 ;165
+Mayo;Salida;Costo;Voucher detracciones;JT;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-393 ;393
+Mayo;Salida;Costo;Voucher detracciones;JT;190601-P01 PEBAR Optimización sist control muestreador;Perubar;-121 ;121
+Mayo;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-297 ;297
+Mayo;Salida;Costo;Factura de compra;Otros;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-300 ;300
+Mayo;Salida;Gasto;Factura de compra;Google;Administracion;NA;-27 ;27
+Mayo;Salida;Costo;Factura de compra;Otros;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;-109 ;109
+Junio;Salida;Gasto;Factura de compra;Contabilidad;Administracion;NA;-164 ;164
+Junio;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-91 ;91
+Junio;Salida;Gasto;Factura de compra;AFP;Administracion;NA;-80 ;80
+Junio;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-385 ;385
+Junio;Salida;Gasto;NPS Sunat;Sunat;Administracion;NA;-153 ;153
+Junio;Salida;Gasto;Prestamo ICESP Colombia;Otros;Administracion;NA;-500 ;500
+Junio;Salida;Costo;Factura de compra;Hoteles;210201-P01 IEP Mantenimiento anual SCADA;IEP;-69 ;69
+Junio;Salida;Costo;Factura de compra;Aerolineas;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;-53 ;53
+Junio;Salida;Costo;Factura de compra;Otros;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;-14 ;14
+Junio;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-53 ;53
+Junio;Salida;Costo;Factura de compra;Test Covid;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;-22 ;22
+Junio;Salida;Costo;Factura de compra;Test Covid;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;-24 ;24
+Junio;Salida;Costo;Factura de compra;Hoteles;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;-135 ;135
+Junio;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-375 ;375
+Junio;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-338 ;338
+Junio;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-460 ;460
+Junio;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-293 ;293
+Junio;Salida;Costo;Factura de compra;Otros;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;-150 ;150
+Junio;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-54 ;54
+Junio;Salida;Costo;Factura de compra;JT;190601-P01 PEBAR Optimización sist control muestreador;Perubar;-1184 ;1184
+Junio;Salida;Costo;Voucher detracciones;JT;190601-P01 PEBAR Optimización sist control muestreador;Perubar;-162 ;162
+Junio;Salida;Costo;Factura de compra;Otros;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;-54 ;54
+Junio;Salida;Costo;Factura de compra;Precision;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;-1149 ;1149
+Junio;Salida;Costo;Factura de compra;Otros;210201-P01 IEP Mantenimiento anual SCADA;IEP;-57 ;57
+Junio;Salida;Costo;Factura de compra;Aerolineas;210201-P01 IEP Mantenimiento anual SCADA;IEP;-163 ;163
+Junio;Salida;Gasto;Recibo honorarios;Eduardo;Administracion;NA;-750 ;750
+Junio;Salida;Gasto;Voucher Nomina;Jeffrey;Administracion;NA;-338 ;338
+Junio;Salida;Gasto;Recibo honorarios;Norberto;Administracion;NA;-480 ;480
+Junio;Salida;Gasto;Voucher Nomina;Norberto;Administracion;NA;-293 ;293
+Junio;Salida;Gasto;Factura de compra;Mapfre;Administracion;NA;-91 ;91
+Junio;Salida;Costo;Factura de compra;Aerolineas;210201-P01 IEP Mantenimiento anual SCADA;IEP;-137 ;137
+Junio;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-49 ;49
+Junio;Salida;Gasto;Factura de compra;Comunicaciones;Administracion;NA;-11 ;11
+Julio;Salida;Costo;Factura de compra;Rhona;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;-36 ;36
+Julio;Salida;Costo;Factura de compra;Otros;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;-42 ;42
+Julio;Salida;Costo;Factura de compra;Otros;210520-P01 JT Automatizacion y telemetria Indupark;JT;-57 ;57
+Enero;Entrada;Ingreso;Factura de venta;NA;200312-P01 IEP Traslado de servidores ICCP a Pucallpa;IEP;4569 ;4569
+Enero;Entrada;Ingreso;Factura de venta;NA;191207-P01 PEBAR Sum cont elevador muest (incluye PLC nuevo);Perubar;3683 ;3683
+Marzo;Entrada;Ingreso;Factura de venta;NA;200312-P01 IEP Traslado de servidores ICCP a Pucallpa;IEP;3427 ;3427
+Marzo;Entrada;Ingreso;Factura de venta;NA;200609-P01 HPG Monitoreo del transformador y señales de la línea;HPG;2566 ;2566
+Abril;Entrada;Ingreso;Factura de venta;NA;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;2876 ;2876
+Abril;Entrada;Ingreso;Factura de venta;NA;201009-P01 PEBAR Actualización de SCADA a la versión CITECT 2018 R2;Perubar;722 ;722
+Abril;Entrada;Ingreso;Factura de venta;NA;191207-P01 PEBAR Sum cont elevador muest (incluye PLC nuevo);Perubar;772 ;772
+Mayo;Entrada;Ingreso;Factura de venta;NA;200609-P01 HPG Monitoreo del transformador y señales de la línea;HPG;2566 ;2566
+Mayo;Entrada;Ingreso;Factura de venta;NA;210312-P02 V2 HPG Supervisión a la Integración de control nueva planta Solar;COLCA;3350 ;3350
+Mayo;Entrada;Ingreso;Factura de venta;NA;200922-P01 PEBAR Mantenimiento sistema de control y SCADA;Perubar;2876 ;2876
+Mayo;Entrada;Ingreso;Factura de venta;NA;190911-P01 PEBAR Reemplazo PLC de muestreador 2;Perubar;12342 ;12342
+Junio;Entrada;Ingreso;Factura de venta;NA;210405-P01 IEP Servicio Ingeniero sistema SCADA Pto Maldonado;IEP;395 ;395
+Junio;Entrada;Ingreso;Factura de venta;NA;210521-P01 FERRENERGY Cambio de sistema de control Terberg;Ferrenergy;1921 ;1921
+Junio;Entrada;Ingreso;Factura de venta;NA;210201-P01 IEP Mantenimiento anual SCADA;IEP;1194 ;1194
+Junio;Entrada;Ingreso;Voucher devolucion Sunat;NA;Administracion;NA;1184 ;1184
